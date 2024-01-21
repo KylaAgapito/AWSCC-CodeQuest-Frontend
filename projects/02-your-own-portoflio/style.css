@@ -1,1 +1,272 @@
-/* GO WILD AND BE CREATIVE! */
+/* Start of Global Stylings */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+
+/* End of Global Stylings */
+
+
+/* Start of Header */
+
+header {
+    background-color: #090302;
+    padding: 10px;
+}
+
+nav {
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    padding: 0 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/* End  of Header */
+
+
+/* Start of Main Banner Area */
+
+.main_banner_area {
+    position: relative;
+    z-index: 1;
+    background-image: -moz-linear-gradient(0deg, #E36588 0%, #AD87B8 100%);
+    background-image: -webkit-linear-gradient(0deg, #E36588 0%, #AD87B8 100%);
+    margin-bottom: 200px;
+}
+
+.main_banner_area .main_box {
+    min-height: 700px;
+    border-radius: 12px;
+    position: relative;
+    bottom: -200px;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0px 20px 80px 0px rgba(153, 153, 153, 0.3);
+}
+
+.main_banner_area .banner_inner {
+    position: relative;
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+}
+
+.main_banner_area .banner_inner .banner_content {
+    color: #222222;
+    vertical-align: middle;
+    align-self: center;
+    text-align: left;
+}
+
+.main_banner_area .banner_inner .banner_content .media .d-flex {
+    padding-right: 0px;
+}
+
+.main_banner_area .banner_inner .banner_content .media .media-body {
+    vertical-align: middle;
+    align-self: center;
+}
+
+.main_box {
+    background: #fff;
+    min-height: 360px;
+    border-radius: 12px;
+    position: relative;
+    bottom: -120px;
+    box-shadow: 0px 20px 80px 0px rgba(153, 153, 153, 0.3);
+}
+
+.banner_inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 360px;
+    z-index: 1;
+}
+
+.media {
+    display: flex;
+    align-items: flex-start;
+}
+
+.d-flex img {
+    max-width: 680px;
+    border-radius: 12px;
+}
+
+
+/* End of Banner Area */
+
+
+/* Personal Text Area */
+
+.personal_text {
+    padding-left: 95px;
+}
+
+.personal_text h6 {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Comfortaa', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2.1px;
+    font-weight: normal;
+    margin-bottom: 12px;
+    color: #222222;
+}
+
+.personal_text h4 {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Comfortaa', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #222222;
+}
+
+.personal_text h3 {
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #222222;
+}
+
+.personal_text p {
+    font-family: 'Comfortaa', sans-serif;
+    max-width: 540px;
+    color: #777777;
+    margin-bottom: 40px;
+    letter-spacing: 0.5px;
+}
+
+.personal_text h5 {
+    font-size: 16px;
+    letter-spacing: 2.1px;
+    font-weight: 500;
+    font-family: 'Comfortaa', sans-serif;
+    text-transform: uppercase;
+    max-width: 540px;
+    color: #777777;
+    margin-top: 40px;
+}
+
+.basic_info li {
+    list-style-type: circle;
+}
+
+.basic_info li {
+    margin-bottom: 15px;
+    margin-left: 40px;
+    list-style: circle;
+}
+
+
+/* Socials Area */
+
+.social-media-images {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    padding-top: 20px;
+    margin: 0px;
+}
+
+.social-media-images li {
+    list-style: none;
+}
+
+.seperate-social-images {
+    padding-right: 20px;
+}
+
+
+/* About Me Area */
+
+.about-myself {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-myself .text {
+    font-size: 25px;
+    margin: 0 11%;
+    text-align: justify;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.about-myself h1 {
+    padding-bottom: 15px;
+}
+
+
+/* About Me Area */
+
+
+/* Footer Area */
+
+footer {
+    background-color: rgb(24, 24, 24);
+    color: white;
+}
+
+footer h2 {
+    text-align: center;
+    font-size: 15px;
+    margin: 0px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+
+/* Footer Area */
+
+
+/* Responsive Styling (idk if this is right)*/
+
+@media (min-width: 1620px) {
+    .container {
+        max-width: 1620px;
+    }
+}
+
+@media (min-width: 1620px) {
+    .main_box {
+        max-width: 1620px;
+        margin: auto;
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .social-media-images {
+        top: 360px;
+        flex-wrap: wrap;
+        size: 10px;
+    }
+}
+
+
+/* Responsive Styling */
