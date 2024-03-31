@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stellar Jades Guessing Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <img class="background-image" src="assets\background.png"> </img>
+
+    <div class="container">
+
+        <div class="top-container">
+            <h1 class="header-title">Guess the Number of Stellar Jades!</h1>
+            <p class="header-description">
+                After returning from Penacony, March 7th has prepared a mini-game for you! Get rewarded with Stellar Jades by guessing correctly the number of Stellar Jades she has, or else lose the game empty-handed!
+            </p>
+        </div>
+
+        <main class="main">
+            <div class="main-container">
+                <div class="game-container">
+                    <div class="main-character-container">
+                        <div class="character-expressions-container">
+                            <div class="character-expressions-images">
+                                <img class="march-container" id="march-Container" src="../assets/March 7th Stickers/March_7th_Sticker_07.webp">
+                            </div>
+                        </div>
+                        <div class=" character-dialogue-container ">
+                            <div class="character-says-text ">
+                                <h2 class="march-message ">March 7th says... </h2>
+                            </div>
+                            <div class="character-dialogue-text ">
+                                <p class="march-dialogue" id="game-status">Can you guess how many Stellar Jades I have? Tee-hee!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="game-message ">Guess the number of Stellar Jades between 70 and 160!</p>
+
+                    <div class="grid-container ">
+                        <div class="number" id="70">70</div>
+                        <div class="number" id="80">80</div>
+                        <div class="number" id="90">90</div>
+                        <div class="number" id="100">100</div>
+                        <div class="number" id="110">110</div>
+                        <div class="number" id="120">120</div>
+                        <div class="number" id="130">130</div>
+                        <div class="number" id="140">140</div>
+                        <div class="number" id="150">150</div>
+                        <div class="number" id="160">160</div>
+                    </div>
+
+                    <div id="reset-container">
+                        <button id="reset-game-btn">Reset Game</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
