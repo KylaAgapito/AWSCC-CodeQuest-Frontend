@@ -29,28 +29,28 @@ for (let i = 0; i < userInput.length; i++) {
             if (gameStart === true) {
                 marchMessage.innerHTML = "Nice work! The correct answer is " + randomAnswer + "!";
                 marchContainer.innerHTML = "";
-                marchContainer.setAttribute("src", "../assets/March 7th Stickers/March_7th_Sticker_05.webp");
+                marchContainer.setAttribute("src", "assets/March 7th Stickers/March_7th_Sticker_05.webp");
                 gameStart = false;
             }
         } else if (userGuess < randomAnswer && tries > 0) {
             if (gameStart === true) {
                 tries--;
                 marchContainer.innerHTML = "";
-                marchContainer.setAttribute("src", "../assets/March 7th Stickers/March_7th_Sticker_11.webp");
+                marchContainer.setAttribute("src", "assets/March 7th Stickers/March_7th_Sticker_11.webp");
                 marchMessage.innerHTML = "Too low";
             }
         } else if (userGuess > randomAnswer && tries > 0) {
             if (gameStart === true) {
                 tries--;
                 marchContainer.innerHTML = "";
-                marchContainer.setAttribute("src", "../assets/March 7th Stickers/March_7th_Sticker_12.webp");
+                marchContainer.setAttribute("src", "assets/March 7th Stickers/March_7th_Sticker_12.webp");
                 marchMessage.innerHTML = "Too high";
             }
         } else {
             if (gameStart === true) {
                 marchMessage.innerHTML = "Better luck next time! The correct answer is " + randomAnswer;
                 marchContainer.innerHTML = "";
-                marchContainer.setAttribute("src", "../assets/March 7th Stickers/March_7th_Sticker_01.webp");
+                marchContainer.setAttribute("src", "assets/March 7th Stickers/March_7th_Sticker_01.webp");
                 gameStart = false;
             }
         }
