@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 22 - Task 1</title>
+</head>
+
+<body>
+    <div id="dynamicContainer">
+    </div>
+
+    <script>
+        const dynamicContainer = document.getElementById('dynamicContainer');
+        const newImage = document.createElement('img');
+
+        newImage.src = 'assets/Character_Pom-Pom_Game.webp';
+        newImage.alt = 'Dynamically created image';
+
+        dynamicContainer.appendChild(newImage);
+    </script>
+</body>
+
+</html>

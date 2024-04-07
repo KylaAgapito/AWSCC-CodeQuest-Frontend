@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 20 - Selecting Elements</title>
+</head>
+
+<body>
+    <h2>Day 20 - Selecting Elements</h2>
+
+    <p>This is the first paragraph.</p>
+    <p class="info">This is the second paragraph.</p>
+    <p class="info" id="paragraph2">This is the third paragraph.</p>
+
+    <div id="header">This is a header.</div>
+    <p>This is the fourth paragraph.</p>
+    <p class="highlight">This paragraph is highlighted.</p>
+
+    <script>
+        // JavaScript Fundamentals - Day 20: Assignment
+        // Task 1: Selecting Elements
+
+        // 1. Create an HTML document with various elements, including headings, paragraphs, and divs.
+        // 2. Use JavaScript to select and log the following elements to the console:
+
+        //    a. All paragraphs on the page using `getElementsByTagName`.
+
+        //    b. All elements with the class "info" using `getElementsByClassName`.
+
+        //    c. The element with the ID "header" using `getElementById`.
+
+        //    d. The first element with the class "highlight" using `querySelector`.
+
+        const paragraphs = document.getElementsByTagName("p"); //task 1
+        console.log("Paragraphs:", paragraphs);
+
+        const infoElements = document.getElementsByClassName("info"); //task 1
+        console.log("Info Elements:", infoElements);
+
+        const headerElement = document.getElementById("header"); //task 1
+        console.log("Header Element:", headerElement);
+
+        const highlightElement = document.querySelector(".highlight"); //task 1
+        console.log("Highlight Element:", highlightElement);
+
+        // Task 2: Modifying Elements
+
+        // 3. Change the text content of the second paragraph to "This paragraph is now updated!".
+        // 4. Change the background color of the div with the ID "header" to a different color of your choice.
+        const paragraphElement = document.getElementById("paragraph2"); //task 2
+        paragraphElement.textContent = "This paragraph is now updated!"; //task 2
+        headerElement.style.backgroundColor = "pink"; //task 2
+
+        // Task 3: Creating and Appending Elements
+
+        // 5. Create a new `h3` element with the text "New Section" using `document.createElement`.
+        // 6. Append the newly created `h3` element to the end of the body of the HTML document.
+        const H3 = document.createElement("h3"); //task 3
+        H3.textContent = "New Section";
+        document.body.appendChild(H3);
+
+        // Task 4: Removing Elements
+
+        // 7. Remove the first paragraph from the document.
+        const firstParagraph = document.querySelector("p"); //task 4
+        firstParagraph.remove(); //task 4
+
+        // Task 5: Handling Events
+
+        // 8. Add a click event listener to the div with the ID "header" that logs "Header clicked!" to the console when clicked.
+        function handleHeaderClick() { //task 5
+            console.log("Header clicked!");
+        }
+        headerElement.addEventListener("click", handleHeaderClick); //task 5
+
+        // Task 6: Advanced Element Manipulation
+
+        // 9. Create an array of colors.
+        // 10. Use a loop to iterate over all paragraphs and assign a different background color from the array to each paragraph.
+        const colors = ["red", "pink", "blue", "yellow"]; //task 6
+        for (let i = 0; i < paragraphs.length; i++) {
+            paragraphs[i].style.backgroundColor = colors[i % colors.length];
+        }
+    </script>
+</body>
+
+</html>

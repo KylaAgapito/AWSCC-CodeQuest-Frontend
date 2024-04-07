@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 22 - Task 2</title>
+</head>
+
+<body>
+    <ul id="AstralExpress">
+        <li>March 7th</li>
+        <li>Dan Heng</li>
+        <li>Trailblazer</li>
+        <li>Himeko</li>
+        <li>Welt</li>
+    </ul>
+
+    <script>
+        const AstralExpress = document.getElementById('AstralExpress');
+
+        const itemToRemove = AstralExpress.children[1];
+        AstralExpress.removeChild(itemToRemove);
+
+
+        const lastItem = AstralExpress.lastElementChild;
+        lastItem.remove();
+
+        AstralExpress.innerHTML = '';
+    </script>
+</body>
+
+</html>
